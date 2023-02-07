@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--BrightYellow: hsl(71, 73%, 54%);
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+}
+
+html{
+font-family: 'Karla', sans-serif;
+}
+
+body{
+    background-color: var(--LightGray);
+}
+
+.padre{
+    width: 312px;
+    height: 721px;
+    margin: 81px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.uno{
+    width: 100%;
+    height: 267px;
+    background-color: white;
+    padding: 25px 25px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  
+}
+
+.dos{
+    width: 100%;
+    height: 228px;
+    background-color:var(--Cyan);
+    padding: 25px 25px;
+  
+}
+.tres{
+    width: 100%;
+    height: 226px;
+    background-color:rgba(74,190,189,255);
+    padding: 20px 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  
+}
+
+.uno h2{
+font-size: 20px;
+color:var(--Cyan);
+}
+
+.uno h3{
+font-size: 16px;
+color:var(--BrightYellow);
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.uno h4{
+font-size: 13px;
+color: var(--GrayishBlue);
+line-height: 25px;
+font-weight: lighter;
+}
+
+.dos h2{
+    font-size: 17px;
+    color: var(--LightGray);
+}
+
+.dolar{
+display: flex;
+padding-top: 20px;
+padding-bottom: 5px;
+}
+
+.dolar h3{
+font-size: 30px;
+color: var(--LightGray);
+}
+
+.dolar h4{
+padding-left: 11px;
+padding-top: 8px;
+color: rgba(237, 237, 237, 0.625);
+font-weight: lighter;
+}
+
+.dos h5{
+font-size: 16px;
+font-weight: lighter;
+color: var(--LightGray);    
+padding-bottom: 20px;
+}
+
+.dos .sign{
+width: 266px;
+height: 45px;
+background-color: var(--BrightYellow);
+border-radius: 8px;
+color: var(--LightGray);
+font-weight: bold;
+font-size: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.tres h2{
+    font-size: 18px;
+    color: var(--LightGray);
+}
+
+.tres .par{
+width: 200px;
+height: 150px;
+}
+
+
+.tres .par p{
+    color: var(--LightGray);
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.tres h2{
+    padding-bottom: 18px;
+}
+
+@media all  and (min-width:1440px){
+    .padre{
+        width: 700px;
+        margin: 150px auto;
+    }
+    .cuadrar{
+        display: flex;
+    }
+    .tres{
+        border-bottom-left-radius: 0px;
+        width: 325px;
+        height: 260px;
+        padding: 40px 25px;
+    }
+    .dos{
+        border-bottom-left-radius: 10px;
+        width: 325px;
+        height: 260px;
+        padding: 40px 25px;
+
+    }
+    .uno{
+        height: 200px;
+        width: 93%;
+    }
+    .uno h4{
+        font-size: 17px;
+    }
+
+
+}
